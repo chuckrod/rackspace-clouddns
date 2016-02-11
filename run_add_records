@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-cat /home/rrichard/qualtrax/rackspace-clouddns/hosts.txt | xargs
+while read p; do
+  ./add_record.py echo $p;
+done <hosts.txt
