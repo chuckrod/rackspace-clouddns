@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 while read p; do
-  ./add_record.py echo $p;
+  ./add_record.py $p;
 done <hosts.txt
